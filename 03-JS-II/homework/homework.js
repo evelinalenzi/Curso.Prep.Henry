@@ -96,9 +96,9 @@ function esDiezOCinco(numero) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (numero === 10 || numero === 5) {
-    return "true"; 
+    return true; 
   } else {
-    return "false";
+    return false;
   }
   }
 
@@ -107,9 +107,9 @@ function estaEnRango(numero) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (numero<50 && numero>20) {
-    return "true";
+    return true;
    } else {
-     return "false"
+     return false;
    }
   }
 
@@ -122,9 +122,9 @@ function esEntero(numero) {
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
   if (numero % 1 === 0) {
-    return "true";
+    return true;
     } else { 
-      return "false";
+      return false;
   }
  }
 
@@ -176,16 +176,16 @@ function esPrimo(numero) {
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos 
  if (numero === 2) {
-   return "true";
+   return true;
  }
   if (numero < 2 ) {
-    return "false";
+    return false;
   }
   for (var i = 2; i < numero; i++) {
   if (numero % i === 0) { 
-    return "false";
+    return false;
   } else { 
-    return "true";
+    return true;
   }
  }
 }
